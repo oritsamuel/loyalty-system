@@ -1,45 +1,112 @@
-# Amra Nail Salon - Loyalty System
+# 💳 Amra Nail Salon — Loyalty System
 
-Welcome to the Amra Nail Salon Loyalty System! This project is a modern web application built with Next.js and Supabase, designed to reward loyal customers with a seamless, engaging experience. 
+A modern, staff-facing loyalty tracking system that replaces paper punch cards with a seamless digital experience.
 
-## 🎯 Purpose
+Built with **Next.js** and **Supabase**, this app allows salon staff to register customers, track visits, and automatically reward loyalty through an interactive digital card system.
 
-The primary goal of this system is to manage and track customer visits for Amra Nail Salon's loyalty program. It replaces traditional paper punch cards with a sleek, digital alternative. Customers can easily be registered by the salon staff, receive a unique QR code, and track their progress towards rewards (such as a free service or discount) every time they check in.
+---
 
-## ✨ Features
-- **Premium UI / UX**
-  - High-end, fully responsive design built with Tailwind CSS.
-  - Smooth micro-animations, glassmorphism styling, and a curated color palette that reflects a premium salon aesthetic.
-    
-  ![alt text](image-6.png)
-  
-- **Customer Registration**
-  - Intuitive interface (`/register`) to enroll new clients.
-  - Automatically generates a unique, 6-character alphanumeric ID for each customer.
-  - Specifically designed to validate Ethiopian phone numbers (+251 format).
-    
-![alt text](image-1.png)
-- **Instant QR Code Generation**
-  - Upon registration, the system dynamically generates a unique QR code linking directly to the customer's personal check-in page.
-  - One-click download feature to easily save or share the QR code with the customer.
-    
-![alt text](image-2.png)
-- **Digital Loyalty Card & Check-in**
-  - Dedicated check-in page (`/check-in?customerId=...`) that instantly processes and records visits.
-  - A beautiful, interactive 6-slot digital stamp card.
-    
-![alt text](image-3.png)
-  - **Rewards at Milestones:** Customers unlock special rewards on their 3rd and 6th visits, accompanied by exciting visual celebrations (confetti animations).
-    
-![alt text](image-4.png)
-  - **Card Completion Logic:** The system elegantly handles full cards after the 6th visit, ensuring accurate progress tracking.
-    
-![alt text](image-5.png)
+## 🚀 Key Features
 
+### 🧾 Customer Registration
 
-## 🛠️ Technology Stack
+* Register new clients through a clean, intuitive interface
+* Auto-generates a unique 6-character customer ID
+* Ethiopian phone number validation (+251 format)
 
-- **Frontend:** [Next.js](https://nextjs.org/) (App Router), [React](https://react.dev/), styled with [Tailwind CSS](https://tailwindcss.com/).
-- **Backend & Database:** [Supabase](https://supabase.com/) for secure, real-time database management and API operations.
-- **Assets & Effects:** [Lucide React](https://lucide.dev/) for scalable vector icons and `canvas-confetti` for celebratory animations.
+![Customer Registration](image-1.png)
 
+---
+
+### 🔳 QR Code System
+
+* Instantly generates a unique QR code per customer
+* Links directly to their check-in page
+* One-click download for easy sharing
+
+![QR Code](image-2.png)
+
+---
+
+### 🎟 Digital Loyalty Card
+
+* Interactive 6-slot stamp card UI
+* Real-time visit tracking
+* Smooth animations and visual feedback
+
+![Loyalty Card](image-3.png)
+
+---
+
+### 🎉 Reward System
+
+* Automatic rewards at:
+
+  * 3rd visit
+  * 6th visit
+* Includes celebratory animations (confetti)
+
+![Rewards](image-4.png)
+
+---
+
+### 🔁 Smart Card Logic
+
+* Handles completed cards cleanly
+* Ensures accurate tracking beyond 6 visits
+
+![Card Logic](image-5.png)
+
+---
+
+## 🎯 Why I Built This
+
+Many small service businesses still rely on physical loyalty cards, which are:
+
+* Easy to lose
+* Hard to track
+* Not scalable
+
+This project digitizes that experience into a **simple, reliable, and engaging system** that improves both staff workflow and customer retention.
+
+---
+
+## 🧠 What This Project Demonstrates
+
+* Building real-world business systems with **Next.js**
+* Designing clean, responsive **frontend interfaces**
+* Managing state and user flows across multiple pages
+* Integrating frontend with a backend service (Supabase)
+* Creating polished UI with animations and feedback
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** Next.js (App Router), React, Tailwind CSS
+* **Backend:** Supabase
+* **UI & Effects:** Lucide Icons, canvas-confetti
+
+---
+
+## ⚙️ Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🌍 Future Improvements
+
+* Admin dashboard with analytics
+* Customer search & filtering
+* Role-based access (staff vs admin)
+* Mobile-first optimizations
+
+---
+
+## 📌 Note
+
+This system is designed for **internal staff use only** and is optimized for speed, simplicity, and usability in a real business environment.
