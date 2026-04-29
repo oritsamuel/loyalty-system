@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amra Nail Salon - Loyalty System
 
-## Getting Started
+Welcome to the Amra Nail Salon Loyalty System! This project is a modern web application built with Next.js and Supabase, designed to reward loyal customers with a seamless, engaging experience. 
 
-First, run the development server:
+## 🎯 Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The primary goal of this system is to manage and track customer visits for Amra Nail Salon's loyalty program. It replaces traditional paper punch cards with a sleek, digital alternative. Customers can easily be registered by the salon staff, receive a unique QR code, and track their progress towards rewards (such as a free service or discount) every time they check in.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Customer Registration**
+  - Intuitive interface (`/register`) to enroll new clients.
+  - Automatically generates a unique, 6-character alphanumeric ID for each customer.
+  - Specifically designed to validate Ethiopian phone numbers (+251 format).
+  ![alt text](image-1.png)
+- **Instant QR Code Generation**
+  - Upon registration, the system dynamically generates a unique QR code linking directly to the customer's personal check-in page.
+  - One-click download feature to easily save or share the QR code with the customer.
+![alt text](image-2.png)
+- **Digital Loyalty Card & Check-in**
+  - Dedicated check-in page (`/check-in?customerId=...`) that instantly processes and records visits.
+  - A beautiful, interactive 6-slot digital stamp card.
+  ![alt text](image-3.png)
+  - **Rewards at Milestones:** Customers unlock special rewards on their 3rd and 6th visits, accompanied by exciting visual celebrations (confetti animations).
+  ![alt text](image-4.png)
+  - **Card Completion Logic:** The system elegantly handles full cards after the 6th visit, ensuring accurate progress tracking.
+  ![alt text](image-5.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Premium UI / UX**
+  - High-end, fully responsive design built with Tailwind CSS.
+  - Smooth micro-animations, glassmorphism styling, and a curated color palette that reflects a premium salon aesthetic.
+  ![alt text](image-6.png)
 
-## Learn More
+## 🛠️ Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** [Next.js](https://nextjs.org/) (App Router), [React](https://react.dev/), styled with [Tailwind CSS](https://tailwindcss.com/).
+- **Backend & Database:** [Supabase](https://supabase.com/) for secure, real-time database management and API operations.
+- **Assets & Effects:** [Lucide React](https://lucide.dev/) for scalable vector icons and `canvas-confetti` for celebratory animations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
