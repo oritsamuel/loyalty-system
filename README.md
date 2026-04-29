@@ -1,5 +1,8 @@
 # 💳 Amra Nail Salon — Loyalty System
 
+🔗[ **Live Demo:**](https://amra-loyalty-system.vercel.app/)  
+📦[ **Source Code:** ](https://github.com/oritsamuel/loyalty-system)
+
 A modern, staff-facing loyalty tracking system that replaces paper punch cards with a seamless digital experience.
 
 Built with **Next.js** and **Supabase**, this app allows salon staff to register customers, track visits, and automatically reward loyalty through an interactive digital card system.
